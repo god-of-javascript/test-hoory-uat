@@ -24,26 +24,25 @@
     </div>
     
     
-  <script>
-     window.hoory = {
-        initializeHidden: true,
-        forceChatInit: true
-     }
-  </script>
+
+    <script>
+      window.hoorySettings = {"position":"right","type":"standard","launcherTitle":"Chat with us"};
+      (function(d,t) {
+        var BASE_URL="https://app.hoory.com";
+        var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src=BASE_URL+"/packs/js/sdk.js";
+        g.defer = true;
+        g.async = true;
+        s.parentNode.insertBefore(g,s);
+        g.onload=function(){
+          window.hoorySDK.run({
+            websiteToken: 'xr5mbyA1ZueF2pP1KGRwzaFd',
+            baseUrl: BASE_URL
+          })
+        }
+      })(document,"script");
+    </script>
     
-  <!-- Hoory -->
-  <script>!function(h,oo,r,y){h[r]=h[r]||{},h[r].workspace=y;const f=oo.getElementsByTagName('script')[0],j=oo.createElement('script');j.async=!0,j.src='https://embed-dev.hoory.cloud/embed.js?w='+y,f.parentNode.insertBefore(j, f),j.onload=function(){h[r].init()}}(window,document,'hoory','bet');</script>
-  <!-- Hoory -->
-    
-    
-  <!-- Hoory -->
-  <script>!function(h,oo,r,y){h[r]=h[r]||{},h[r].workspace=y;const f=oo.getElementsByTagName('script')[0],j=oo.createElement('script');j.async=!0,j.src='https://embed-dev.hoory.cloud/embed.js?w='+y,f.parentNode.insertBefore(j, f),j.onload=function(){h[r].init()}}(window,document,'hoory','bet');</script>
-  <!-- Hoory -->
-    
-    
-  <!-- Hoory -->
-  <script>!function(h,oo,r,y){h[r]=h[r]||{},h[r].workspace=y;const f=oo.getElementsByTagName('script')[0],j=oo.createElement('script');j.async=!0,j.src='https://embed-dev.hoory.cloud/embed.js?w='+y,f.parentNode.insertBefore(j, f),j.onload=function(){h[r].init()}}(window,document,'hoory','bet');</script>
-  <!-- Hoory -->
 
 </body>
 </html>
