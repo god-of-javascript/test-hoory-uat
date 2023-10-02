@@ -29,27 +29,23 @@
 
 
 <script>
-  window.hoorySettings = {
-  position: 'right',
-  type: 'standard',
-  launcherTitle: 'Chat with us',
-};
-  (function(d, t) {
-    var BASE_URL = 'https://app.hoory.com';
-    var g = d.createElement(t);
-  var s = d.getElementsByTagName(t)[0];
-    g.src = BASE_URL + '/packs/js/sdk.js';
+  window.hoorySettings = {"position":"right","type":"standard","launcherTitle":"Chat with us"};
+  (function(d,t) {
+    var BASE_URL="https://uat.hoory.com";
+    var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=BASE_URL+"/packs/js/sdk.js";
     g.defer = true;
     g.async = true;
-    s.parentNode.insertBefore(g, s);
-    g.onload = function() {
+    s.parentNode.insertBefore(g,s);
+    g.onload=function(){
       window.hoorySDK.run({
-        websiteToken: 'xr5mbyA1ZueF2pP1KGRwzaFd',
-        baseUrl: BASE_URL,
-      });
-    };
-  })(document, 'script');
+        websiteToken: 'VGJzWLsgkGD6SgAWmf8oA5yY',
+        baseUrl: BASE_URL
+      })
+    }
+  })(document,"script");
 </script>
+    
 
 
 </body>
