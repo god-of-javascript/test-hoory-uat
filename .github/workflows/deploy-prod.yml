@@ -1,11 +1,7 @@
 
 name: Build and Deploy
 on:
-  workflow_dispatch:
-    inputs:
-      slug:
-        description: slug
-        required: true
+  push
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
