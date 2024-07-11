@@ -36,15 +36,23 @@
         s.parentNode.insertBefore(g,s);
         g.onload=function(){
           window.hoorySDK.run({
-            websiteToken: 'VGJzWLsgkGD6SgAWmf8oA5yY',
+            websiteToken: 'Vqm6X7sy11aCAEqrzmmQnwhW',
             baseUrl: BASE_URL
-          })
+          });
+          
+          window.hoorySDK.runSecond({
+            websiteToken: "VGJzWLsgkGD6SgAWmf8oA5yY",
+            baseUrl: BASE_URL,
+            settings: {
+              position: "right",
+            },
+          });
         }
       })(document,"script");
 
-      window.addEventListener("hoory:error", function (data) {
-        console.log("Error loading hoory! :", data);
-      });
+      // window.addEventListener("hoory:error", function (data) {
+      //   console.log("Error loading hoory! :", data);
+      // });
     </script>
     
 
